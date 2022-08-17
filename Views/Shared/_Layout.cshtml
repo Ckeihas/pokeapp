@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TheRealLearningDiary</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/Navbar.js" defer></script>
+</head>
+<body>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <h1>L<span>D</span></h1>
+                <div class="listItems">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navText">Home</a></li>
+                <li><a asp-area="" asp-controller="Topics" asp-action="Create" class="navText">Get Started</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Search" class="navText">Search Topic</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="EditTopic" class="navText">Edit Topic</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Delete" class="navText">Delete Topic</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

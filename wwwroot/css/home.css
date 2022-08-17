@@ -1,0 +1,281 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.header{
+    
+    background-color: yellow;
+}
+
+.header h1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    position: absolute;
+}
+
+.header h1 {
+    color: aqua;
+}
+
+.header span {
+    color: pink;
+    font-size: 110px;
+    font-weight: 1500;
+}
+
+.inpBtn {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 50px;
+    width: 150px;
+    background-color: rgba(127, 255, 212, 0.632);
+}
+
+    .inpBtn:hover {
+        background-color: rgba(127, 255, 212);
+        transition: color .4s ease-in-out, box-shadow .2s ease-in-out;
+    }
+
+    .inpBtn:active {
+        background-color: rgba(127, 255, 212, 0.632);
+    }
+
+
+#learnVideo {
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    object-fit: cover;
+}
+
+.videodiv{
+    margin-right: 160px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8em;
+    margin-bottom: 8em;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 40px;
+}
+
+.orange{
+    background-color: darkorange;
+    height: 350px;  
+}
+
+.green {
+    background-color: mediumseagreen;
+    height: 350px;
+}
+
+.blue{
+    background-color: dodgerblue;
+    height: 350px;
+}
+
+ .info img {
+    width: 16em;
+ }
+
+    .info.right {
+        grid-template-areas: "left right";
+    }
+
+        .info.right img {
+            grid-area: right;
+        }
+
+#container {
+    background-color: red;
+}
+
+.whenClicked {
+    background-color: rgb(0,0,0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.instBtn1 {
+    float: right;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+
+    .instBtn1:hover {
+        font-weight: bold;
+    }
+
+.instBtn {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+    .instBtn:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        top: -16%;
+        left: 28%;
+        border-bottom: 20px solid white;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent
+    }
+
+
+
+.instBtn2 {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 78%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+    .instBtn2:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        top: -16%;
+        left: 28%;
+        border-bottom: 20px solid white;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent
+    }
+
+.instBtn3 {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.instBtn3:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        top: -16%;
+        left: 28%;
+        border-bottom: 20px solid white;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+}
+
+.instBtn4 {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 92%;
+    width: 165px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+    .instBtn4:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        top: -15%;
+        left: 40%;
+        border-bottom: 20px solid white;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+
+/*Animaatio Javascriptiin*/
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+    .reveal.active {
+        opacity: 1;
+    }
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
