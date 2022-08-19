@@ -82,12 +82,11 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
 
 .nav {
-    background-color: yellow;
+    background: linear-gradient(90deg, rgba(255,246,118,1) 0%, rgba(249,212,64,1) 100%);
     height: 90px;
     position: absolute;
     width: 100%;
@@ -96,9 +95,14 @@ body {
     top: 0;
 }
 
-    .nav li {
-        margin-right: 40px;
-    }
+.nav img{
+    width: 125px;
+    margin-left: 300px;
+}
+
+.nav li {
+    margin-right: 40px;
+}
 
 .listItems {
     float: right;
@@ -108,21 +112,6 @@ body {
     margin-right: 30px;
     font-size: 20px;
     line-height: 80px;
-}
-
-.nav ul h1 {
-    margin-left: 300px;
-    font-size: 20px;
-    line-height: 80px;
-    font-size: 37px;
-    color: aqua;
-    font-weight: bold;
-}
-
-.nav ul span {
-    font-size: 47px;
-    color: pink;
-    font-weight: 1600;
 }
 
 .nav a:hover {
@@ -135,7 +124,7 @@ body {
 }
 
 .navText {
-    color: blue;
+    color: black;
     z-index: 20;
 }
 

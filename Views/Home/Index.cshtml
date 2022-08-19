@@ -5,46 +5,97 @@
 <!DOCTYPE html>
 <head>
     <title>Learning Diary</title>
-    <link href="~/css/home.css" rel="stylesheet">
+    <link href="~/css/Home.css" rel="stylesheet">
     <script src="~/js/Home.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Learning<span>Diary</span></h1>
-        <div class="add">
-            <button class="inpBtn" type="button">Get Started</button>
+    <div class="loadScreen">
+        <div class="loadScreen-text">
+            <h1 class="hide">
+                <span class="text">Gotta catch</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Them all!</span>
+            </h1>
         </div>
+    </div>
+    <div class="slider"></div>
+    <div class="header">
+        <img src="~/Images/Pokemon.png" />
         <div class="videodiv">
             <video autoplay muted loop id="learnVideo">
                 <source src="~/Images/pexels-tima-miroshnichenko-5954843.mp4">
             </video>
         </div>
-        
+        <div class="blackLineText">Scroll down</div>
+        <div class="blackLine"></div>
     </div>
     <div class="orange">
         <div class="info">
-            <img src="~/Images/Charmander.png" class="container reveal fade-bottom"/>
-            <div class="content">
-                <h1>Follow your learning process!</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            <img src="~/Images/Charmander.png" class="container reveal fade-bottom" />
         </div>
     </div>
+
+    <div class="content or">
+        <div class="anim">
+            <h1>Collect virtual Pokemon cards!</h1>
+            <p>"Lorem ipsum dolor  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+
     <div class="green">
         <div class="info right">
-            <img src="~/Images/Bulbasaur.png" class="container reveal fade-left"/>
-            <div class="content">
-                <h1>Search your on going studies!!</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            </div>
+            <img src="~/Images/Bulbasaur.png" class="container reveal fade-left" />
         </div>
     </div>
+
+    <div class="content gr">
+        <h1>Buy and sell your card on marketplace.</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    </div>
+
     <div class="blue">
         <div class="info">
-            <img src="~/Images/Squirtle1.png" class="container reveal fade-right"/>
-            <div class="content">
-                <h1>Get access for premium features with only 12.99$/month!</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <img src="~/Images/Squirtle1.png" class="container reveal fade-right" />
+        </div>
+    </div>
+
+    <div class="content bl">
+        <h1>Get access for premium features with only 12.99$/month!</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="scrollDist"></div>
+    <div class="darkSide">
+        <div class="gengar">
+            <img src="~/Images/kindpng_1350264.png" />         
+        </div>
+       
+       
+        @*-------------------------------BATTLE ZONE--------------------------------------------*@
+       
+        <div class="stormClouds">
+            <div class="move">
+                <div class="cloud1">
+                    <img src="~/Images/StormCloud1.png" class="cloud1-img" />
+                </div>
+                <div class="cloud4">
+                    <img src="~/Images/StormCloud3.png" class="cloud4-img" />
+                </div>
+                <div class="cloud2">
+                    <img src="~/Images/StormCloud2.png" class="cloud2-img" />
+                </div>
+                <div class="cloud5">
+                    <img src="~/Images/StormCloud1.png" class="cloud5-img" />
+                </div>
+                <div class="cloud3">
+                    <img src="~/Images/StormCloud3.png" class="cloud3-img" />
+                </div>
+                <div class="cloud6">
+                    <img src="~/Images/StormCloud3.png" class="cloud6-img" />
+                </div>
             </div>
         </div>
     </div>
