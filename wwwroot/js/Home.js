@@ -61,3 +61,11 @@ gsap.timeline({ scrollTrigger: { trigger: '.content.bl', start: 'top top', end: 
     .fromTo('.cloud4', { y: 311 }, { y: 100 }, 0)
     .fromTo('.cloud5', { y: 130 }, { y: -5 }, 0)
     .fromTo('.cloud6', { y: 330 }, { y: 200 }, 0)
+    .fromTo('.cloud7', { y: 230 }, { y: 200 }, 0)
+    .fromTo('.cloud8', { y: 230 }, { y: 200 }, 0)
+
+
+gsap.set('.scrollDist2', { width: '150%', height: '200%' })
+gsap.timeline({ scrollTrigger: { trigger: '.scrollDist2', start: 'top top', end: 'bottom bottom', scrub: 2 } })
+
+    .fromTo('.cloud9', { y: 230 }, { y: 200 }, 0)
